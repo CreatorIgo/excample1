@@ -1,0 +1,206 @@
+* {
+    font-family:  'Roboto', sans-serif;
+}
+
+/* body {
+    position: relative;
+} */
+
+nav {
+    height: 51px;
+    background-color: #212121;
+    /* position:fixed;
+    width: 100%; */
+}
+
+.menu {
+    margin: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 10px 70px;  container растягивается в зависимости от контента который в нем есть, в нем сейчас контент на высоту 44px menu (padding 2*10 по вертикали и menu_item 24px.  */
+    padding: 13px 70px;     /* 13 px чтобы горизонтальные границы совпадали. высота header 51px и высота menu и menu_item 13+13+24(menu_item) почти равны */
+    list-style-type: none;
+}
+
+.menu .menu_link{
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+/* вертикальные линии - разделители между пунктами меню */
+.menu .menu_item{
+    border-right: 2px dotted black;   /* граница:толщина точками черный цвет*/
+    padding-right: 17px;        /* примерно одинаковые отступы от линиий и  пунктами меню */
+
+}
+.subheader{
+    position: absolute;
+    height: 84px;
+    width:100%;        /* ширина 100% от родителя*/
+    /* opacity: 0.6; перенесено в background-color, иначе будет работать по всему содержимомму, нужно только для фона */ 
+    background-color: rgba(0, 0, 0, .6);
+}
+.subheader .subheader_logo{
+    display: block;
+    max-width: 100%;  /* если картинка логотипа (лежит ссылкой-внутри этого блока) со временем поменяю, чтобы он не выходил за ширину колонк ограничим его максимальным размером колонки, т.е - 100%*/
+    margin-top: 16px;
+}
+
+.subheader .subheader_official{
+    margin-top: 6px;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 300;
+    color: #ffff;
+}
+.subheader .subheader_call {
+    margin-top: 19px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+    color: #fff;
+}
+.subheader .subheader_phone{
+    display: block;
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: right;
+    color: #fff;
+}
+.subheader .subheader_btn{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    border:none;                /* в Зеплин были границы еще и стилизованные, здесь я их удалил так ближе к проекту фотошопа*/
+    border-radius: 4px;
+    box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+    /*текст на кнопке*/
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.promo {
+    /* position: relative; */
+    
+    padding: 150px 0 135px 0;
+    min-height: 800px;
+    background: url('../../img/main_bg.jpg') center center/cover no-repeat;
+}
+.promo .promo_header {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    margin:0;
+}
+.promo .promo_subheader {
+    display: block;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    margin:0;
+    margin-top: 22px
+}
+.promo .promo_descr{
+    margin: 0;
+    margin-top: 23px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    text-align: center;
+    color: #fff;
+}
+.promo .promo_btn{
+    display: block;
+    width: 259px;
+    height: 63px;
+    margin: 118px auto 0 auto ;
+
+    box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius:4px;
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+    /* text  */
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.reasons{
+    min-height: 900px;
+    padding: 71px 0 65px 0;
+    background-color: #fff;
+}
+.reasons .reasons_btn{
+    width: 112px;
+    height: 24px;
+    margin: 0 auto;
+    background-color: #000;
+    /* text  */
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+    line-height: 2.1;
+    text-transform: uppercase;
+}
+.reasons .row{
+    margin-top: 40px;
+}
+
+.reasons .reasons_header{
+    margin:0;
+    margin-top: 38px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.26;
+    text-align: center;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.reasons .reason1, .reasons .reason2,.reasons .reason3, .reasons .reason4,
+.reasons .reason5, .reasons .reason6, .reasons .reason7, .reasons .reason8{
+    margin-top: 25px;
+    min-height: 140px;
+}
+
+.reasons .reason_ico1,.reasons  .reason_ico2 ,.reasons .reason_ico3, .reasons .reason_ico4,
+.reasons .reason_ico5,.reasons  .reason_ico6 ,.reasons .reason_ico7, .reasons .reason_ico8{
+    width: 113px;
+    height: 113px;
+    vertical-align: middle;
+    
+    }
+
+.reasons .reason_descr1,.reasons .reason_descr2,.reasons .reason_descr3,.reasons .reason_descr4,
+.reasons .reason_descr5,.reasons .reason_descr6,.reasons .reason_descr7,.reasons .reason_descr8 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 341px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify;
+    color: #202020;
+    margin-left: 26px;
+}
+.reasons .reason_descr1 span, .reasons .reason_descr2 span, 
+.reasons .reason_descr3 span, .reasons .reason_descr4 span,
+.reasons .reason_descr5 span, .reasons .reason_descr6 span, 
+.reasons .reason_descr7 span, .reasons .reason_descr8 span{
+    font-size: 17px;
+    font-weight: normal;
+    color: #1eacc7;
+}

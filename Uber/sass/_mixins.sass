@@ -1,0 +1,15 @@
+
+=btn_hover           // миксина
+	&:hover                                   // наведение курсора мышы
+		background-image: none // удаляем заливку
+		background-color: $main_color // меняем фон
+		color: $second_color // цвет текста
+
+@mixin rotate($deg) 			// поворот текста на $deg градусов
+	-webkit-transform: rotate($deg)
+	-ms-transform: rotate($deg)
+	transform: rotate($deg)
+// 	// приминение этой миксины
+// 	// h1 
+// 	// 	@include rotate(3deg);
+ 

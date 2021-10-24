@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?gam7xr');
+  src:  url('../../fonts/icomoon.eot?gam7xr#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?gam7xr') format('truetype'),
+    url('../../fonts/icomoon.woff?gam7xr') format('woff'),
+    url('../../fonts/icomoon.svg?gam7xr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-adobepremiere:before {
+  content: "\e900";
+  color: #ea77ff;
+}
+.icon-adobelightroomclassic:before {
+  content: "\e901";
+  color: #add5ec;
+}
+.icon-adobeillustrator:before {
+  content: "\e902";
+  color: #ff7c00;
+}
+.icon-adobe:before {
+  content: "\e903";
+  color: #f00;
+}
+.icon-figma:before {
+  content: "\e904";
+  color: #f24e1e;
+}
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-social:before {
+  content: "\e905";
+}
